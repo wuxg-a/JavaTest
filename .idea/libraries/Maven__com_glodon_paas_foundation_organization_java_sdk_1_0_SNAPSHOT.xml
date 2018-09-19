@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.glodon.paas.foundation:organization-java-sdk:1.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/glodon/paas/foundation/organization-java-sdk/1.0-SNAPSHOT/organization-java-sdk-1.0-20180731.041400-2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/glodon/paas/foundation/organization-java-sdk/1.0-SNAPSHOT/organization-java-sdk-1.0-20180731.041400-2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/glodon/paas/foundation/organization-java-sdk/1.0-SNAPSHOT/organization-java-sdk-1.0-20180731.041400-2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
