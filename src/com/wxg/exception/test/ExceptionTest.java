@@ -1,8 +1,12 @@
 package com.wxg.exception.test;
 
+import org.elasticsearch.common.netty.channel.ChannelException;
+
 public class ExceptionTest {
 
 	public static void main(String[] args) {
+		//testCheckedException();
+		testUnCheckedException();
 		
 		try {
 			int res=div(2,0);
@@ -20,5 +24,14 @@ public class ExceptionTest {
 		}
 		System.out.println("----after catch exception of div--------");
 		return result;
+	}
+
+	private static void testCheckedException() throws CheckedException{
+		throw new CheckedException();
+	}
+
+	private static void testUnCheckedException() throws UncheckedException{
+			throw new UncheckedException();
+		};
 	}
 }
