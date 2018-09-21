@@ -32,6 +32,5 @@ public class ExceptionTest {
 
 	private static void testUnCheckedException() throws UncheckedException{
 			throw new UncheckedException();
-		};
 	}
 }
