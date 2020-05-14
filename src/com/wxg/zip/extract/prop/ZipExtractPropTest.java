@@ -26,7 +26,7 @@ public class ZipExtractPropTest {
 //            System.out.println(entry.getKey() + ":" + entry.getValue());
 //        }
 
-        String signedUrl = "https://gly-dev-gdoc.oss-cn-shanghai.aliyuncs.com/object/c8/7f30fa59a94e50973ad9ef2f9504ac?Expires=1541253087&OSSAccessKeyId=LTAIP9gxLRjd80Fl&Signature=AhFTRadNWb6ZAFlwaHRlaO/%2BjDs%3D&response-content-disposition=attachment%3Bfilename%3D%22test.zip%22";
+        String signedUrl = "https://gly-dev-gdoc.oss-cn-shanghai.aliyuncs.com/object/c8/7f30fa59a94e50973ad9ef2f9504ac?Expires=1541253087&OSSAccessKeyId=&Signature=AhFTRadNWb6ZAFlwaHRlaO/%2BjDs%3D&response-content-disposition=attachment%3Bfilename%3D%22test.zip%22";
         Map<String, String> hashMap = extractZipCommentFromStream1(signedUrl, 14369039);
         for(Map.Entry entry : hashMap.entrySet()){
             System.out.println(entry.getKey() + ":" + entry.getValue());
@@ -180,21 +180,5 @@ public class ZipExtractPropTest {
         }
         return null;
     }
-
-
-
-    private static Map<String,String> _propToMap(String prop){
-        Map<String, String> propMap = new HashMap<>();
-        if(StringUtils.isBlank(prop)){
-            return propMap;
-        }
-        String[] properties = prop.split("\r\n");
-        propMap = Arrays.stream(properties)
-                .filter(item -> item.contains("="))
-                .collect(Collectors.toMap(item -> item.substring(0, item.indexOf('=')), item ->item.substring(item.indexOf('=') +1)));
-
-        return propMap;
-
-
-    }
+    
 }
